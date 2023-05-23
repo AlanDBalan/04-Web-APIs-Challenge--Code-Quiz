@@ -33,5 +33,30 @@ var quizData = [
     }
 ]
 
-var quiz = document.getElementById('quiz')
-var answerEls = document.querySelectorAll('.answer')
+var quiz= document.getElementById('quiz')
+var answerEls= document.querySelectorAll('.answer')
+var questionEl= document.getElementById('question')
+var a_text= document.getElementById('a_text')
+var b_text= document.getElementById('b_text')
+var c_text= document.getElementById('c_text')
+var d_text= document.getElementById('d_text')
+var submitBtn = document.getElementById('submit')
+
+
+let curretQuiz = 0
+let score = 0
+
+loadQuiz()
+
+function loadQuiz() {
+
+    deselectAnswers()
+
+    var currentQuizData = quizData[currentQuizData]
+
+    questionEl.inneerText = currentQuizData.question
+    a_text.innerText = currentQuizData.a
+    b_text.innerText = currentQuizData.b
+    c_text.innerText = currentQuizData.c
+    d_text.innerText = currentQuizData.d
+}
