@@ -18,7 +18,7 @@ JavaScript
 # Usage
 To use the code quiz, follow these steps:
 
-Click on this livelink:
+Click on this livelink: https://alandbalan.github.io/04-Web-APIs-Challenge--Code-Quiz/
 
 or
 
